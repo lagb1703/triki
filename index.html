@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="icon" href="/media/svg/table.svg" type="image/x-icon">
+
+    <title>Triki online</title>
+</head>
+<body>
+    <header class="encabezado">
+        <img src="/media/img/tic-tac-toe.png" alt="tic-tac-toc">
+    </header>
+    <section class="opciones">
+        <div class="buton"></div>
+        <div>
+            <form action="#" class="hide">
+                <div>
+                    <label for="">¿Activar IA?</label>
+                    <label for="yes">Si</label>
+                    <input type="radio" name="IA" value="yes" id="yes">
+                    <label for="no">No</label>
+                    <input type="radio" name="IA" value="no" id="no">
+                </div>
+                <div>
+                    <div>
+                        <h3>Nombre jugador 1</h3>
+                        <input type="text" name="jugador_1" class="nombre">
+                        <h3>Simbolo jugador 1</h3>
+                        <div class="imagenes"></div>
+                        <input type="file" name="simbolo_jugador_1" class="loader">
+                    </div>
+                    <div>
+                        <h3>Nombre jugador 2</h3>
+                        <input type="text" name="jugador_2" class="nombre">
+                        <h3>Simbolo jugador 2</h3>
+                        <div class="imagenes"></div>
+                        <input type="file" name="simbolo_jugador_2" class="loader">
+                    </div>
+                </div>
+                <input type="submit" value="Guardar cambios" class="in cargar">
+            </form>
+        </div>
+    </section>
+    <main class="triki">
+        <h1>Triki</h1>
+        <div>
+            <div class="tablero">
+                <div style="display: inline; background-image: none; max-width: 150px; max-height: 150px;"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <h2 class="h2">Jugador n</h2>
+                <div class="imagen"></div>
+                <button class="cargar">Jugar</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <a href="#">github</a>
+    </footer>
+    <script src="/js/general.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+/*variables*/
+:root{
+    --color_principal: black;
+    --color_secundario: white;
+}
+
+/*etiquetas*/
+html{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+h1{
+    font-size: 10vw;
+}
+
+a{
+    text-decoration: none;
+}
+/*clases*/
+
+.hide{
+    display: none;
+}
+
+.imagenes{
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.encabezado{
+    min-height: 6vh;
+    height: 4vw;
+    background-color: var(--color_principal);
+}
+
+.encabezado img{
+    min-height: 6vh;
+    min-width: 6vh;
+    height: 4vw;
+    width: 4vw;
+    margin-left: 0.5vw;
+}
+
+.opciones{
+    margin: 1vh 1vw;
+    width: 98%;
+    border: 1px solid var(--color_principal);
+    border-radius: 10px;
+}
+
+.buton{
+    cursor: pointer;
+    width: 98%;
+    height: 6vh;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    background-image: url(/media/svg/expand_more_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.opciones div form{
+    margin: 0 2vh;
+    width: 96%;
+}
+
+.in{
+    min-width: 150px;
+    margin: 1vh 40%;
+    width: 10%;
+    height: 5vh;
+}
+
+.opciones div form label{
+    margin-left: 1vw;
+}
+
+.opciones div form div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.opciones div form div div{
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(9,1fr);
+}
+
+.opciones div form div div div{
+    max-width: 300px;
+    max-height: 300px;
+    grid-row: 4/9;
+    height: 30vw;
+    width: 30vw;
+    border: 1px solid black;
+}
+
+.triki{
+    margin: 1vh 4vw;
+}
+
+.triki h1{
+    text-align: center;
+}
+
+.triki div{
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.triki div div{
+    margin: 0 auto;
+    width: 50%;
+    display: block;
+    text-align: center;
+}
+
+.triki div div:nth-of-type(1){
+    max-width: 450px;
+    max-height: 450px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+}
+
+.triki div div div{
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 50px;
+    min-height: 50px;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    width: 20vw;
+    height: 20vw;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.triki div div div:nth-of-type(3), .triki div div div:nth-of-type(6), .triki div div div:nth-of-type(9){
+    border-right: 0
+}
+.triki div div div:nth-of-type(7), .triki div div div:nth-of-type(8), .triki div div div:nth-of-type(9){
+    border-bottom: 0;
+}
+
+.footer{
+    margin-top: 6vh;
+    height: 5vh;
+    background-color: var(--color_principal);
+    text-align: center;
+}
+
+.footer a{
+    color: var(--color_secundario);
+}
+
+@media only screen and (max-width: 1000px){
+    .triki div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tablero{
+        margin: 0 0 0 -12vw !important;
+    }
+}
